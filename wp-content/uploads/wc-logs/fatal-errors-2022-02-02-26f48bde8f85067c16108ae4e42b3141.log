@@ -1,0 +1,178 @@
+2022-02-02T03:57:37+00:00 CRITICAL Cannot redeclare my_pagination() (previously declared in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php:13) in F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php on line 222
+
+2022-02-02T07:10:14+00:00 CRITICAL Unclosed '{' on line 222 in F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php on line 263
+
+2022-02-02T07:11:16+00:00 CRITICAL syntax error, unexpected token "<" in F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php on line 233
+
+2022-02-02T07:12:38+00:00 CRITICAL syntax error, unexpected identifier "woocommerce_pagination_args", expecting "," or ";" in F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php on line 237
+
+2022-02-02T09:13:30+00:00 CRITICAL Cannot redeclare my_pagination() (previously declared in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php:13) in F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php on line 224
+
+2022-02-02T10:52:19+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:52:43+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:52:50+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:53:50+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:54:20+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:54:44+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:54:54+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-blog-header.php(13): require_once('F:\\Xampp\\htdocs...')
+#6 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#7 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:55:21+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:55:28+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-blog-header.php(13): require_once('F:\\Xampp\\htdocs...')
+#6 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#7 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:55:51+00:00 CRITICAL Uncaught DivisionByZeroError: Division by zero in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php:334
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php(1264): WPPaginate->paginate(false)
+#1 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(304): wp_paginate()
+#2 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\wp-paginate\wp-paginate.php on line 334
+
+2022-02-02T10:58:53+00:00 CRITICAL Cannot redeclare pagination_plugin() (previously declared in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php:12) in F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php on line 224
+
+2022-02-02T10:59:07+00:00 CRITICAL Cannot redeclare pagination_plugin() (previously declared in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php:12) in F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php on line 224
+
+2022-02-02T11:16:51+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_loop_prop() in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php:12
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(227): pagination_plugin()
+#1 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#5 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php on line 12
+
+2022-02-02T11:19:35+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_loop_prop() in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php:12
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(227): pagination_plugin()
+#1 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-blog-header.php(13): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php on line 12
+
+2022-02-02T11:20:15+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_loop_prop() in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php:12
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(227): pagination_plugin()
+#1 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#5 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php on line 12
+
+2022-02-02T11:40:09+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php:15
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(227): pagination_plugin()
+#1 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-admin\admin-ajax.php(22): require_once('F:\\Xampp\\htdocs...')
+#5 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php on line 15
+
+2022-02-02T11:40:11+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php:15
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-content\themes\corprato\functions.php(227): pagination_plugin()
+#1 F:\Xampp\htdocs\wp\wp-settings.php(555): include('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\wp-blog-header.php(13): require_once('F:\\Xampp\\htdocs...')
+#5 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#6 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\plugins\pagination-plugin\pagination-plugin.php on line 15
+

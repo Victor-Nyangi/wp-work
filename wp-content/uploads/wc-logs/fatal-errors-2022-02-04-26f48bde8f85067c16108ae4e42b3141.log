@@ -1,0 +1,56 @@
+2022-02-04T04:14:39+00:00 CRITICAL syntax error, unexpected token "[", expecting ")" in F:\Xampp\htdocs\wp\wp-content\list_shortcode.php on line 4
+
+2022-02-04T08:22:49+00:00 CRITICAL Uncaught TypeError: strpos(): Argument #1 ($haystack) must be of type string, array given in F:\Xampp\htdocs\wp\wp-includes\shortcodes.php:209
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-includes\shortcodes.php(209): strpos(Array, '[')
+#1 F:\Xampp\htdocs\wp\wp-content\list_shortcode.php(28): do_shortcode(Array)
+#2 F:\Xampp\htdocs\wp\wp-includes\shortcodes.php(356): list_shortcode(Array, '', 'list-table')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 F:\Xampp\htdocs\wp\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(list\\-...', 'do_shortcode_ta...', '[list-table ord...')
+#5 F:\Xampp\htdocs\wp\wp-content\themes\twentysixteen\OrdersReport.php(24): do_shortcode('[list-table ord...')
+#6 F:\Xampp\htdocs\wp\wp-includes\template-loader.php(106): include('F:\\Xampp\\htdocs...')
+#7 F:\Xampp\htdocs\wp\wp-blog-header.php(19): require_once('F:\\Xampp\\htdocs...')
+#8 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#9 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-includes\shortcodes.php on line 209
+
+2022-02-04T09:57:49+00:00 CRITICAL Uncaught TypeError: strpos(): Argument #1 ($haystack) must be of type string, array given in F:\Xampp\htdocs\wp\wp-includes\shortcodes.php:209
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-includes\shortcodes.php(209): strpos(Array, '[')
+#1 F:\Xampp\htdocs\wp\wp-content\themes\twentysixteen\OrdersReport.php(19): do_shortcode(Array)
+#2 F:\Xampp\htdocs\wp\wp-includes\template-loader.php(106): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-blog-header.php(19): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#5 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-includes\shortcodes.php on line 209
+
+2022-02-04T09:58:45+00:00 CRITICAL Uncaught TypeError: strpos(): Argument #1 ($haystack) must be of type string, array given in F:\Xampp\htdocs\wp\wp-includes\shortcodes.php:209
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-includes\shortcodes.php(209): strpos(Array, '[')
+#1 F:\Xampp\htdocs\wp\wp-content\themes\twentysixteen\OrdersReport.php(19): do_shortcode(Array)
+#2 F:\Xampp\htdocs\wp\wp-includes\template-loader.php(106): include('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-blog-header.php(19): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#5 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-includes\shortcodes.php on line 209
+
+2022-02-04T13:50:01+00:00 CRITICAL Uncaught Error: Using $this when not in object context in F:\Xampp\htdocs\wp\wp-content\themes\twentysixteen\functions.php:627
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-settings.php(555): include()
+#1 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-blog-header.php(13): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#5 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\themes\twentysixteen\functions.php on line 627
+
+2022-02-04T13:53:25+00:00 CRITICAL Uncaught Error: Using $this when not in object context in F:\Xampp\htdocs\wp\wp-content\themes\twentysixteen\functions.php:627
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-settings.php(555): include()
+#1 F:\Xampp\htdocs\wp\wp-config.php(96): require_once('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\wp-load.php(50): require_once('F:\\Xampp\\htdocs...')
+#3 F:\Xampp\htdocs\wp\wp-blog-header.php(13): require_once('F:\\Xampp\\htdocs...')
+#4 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#5 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\themes\twentysixteen\functions.php on line 627
+

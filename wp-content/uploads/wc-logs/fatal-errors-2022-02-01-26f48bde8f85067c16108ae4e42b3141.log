@@ -1,0 +1,32 @@
+2022-02-01T12:43:03+00:00 CRITICAL Uncaught Error: Call to undefined function get_products() in F:\Xampp\htdocs\wp\wp-content\themes\corprato\some-products.php:9
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 F:\Xampp\htdocs\wp\wp-blog-header.php(19): require_once('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\themes\corprato\some-products.php on line 9
+
+2022-02-01T12:44:51+00:00 CRITICAL Uncaught Error: Call to undefined function get_products() in F:\Xampp\htdocs\wp\wp-content\themes\corprato\some-products.php:9
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 F:\Xampp\htdocs\wp\wp-blog-header.php(19): require_once('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\themes\corprato\some-products.php on line 9
+
+2022-02-01T12:44:51+00:00 CRITICAL Uncaught Error: Call to undefined function get_products() in F:\Xampp\htdocs\wp\wp-content\themes\corprato\some-products.php:9
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 F:\Xampp\htdocs\wp\wp-blog-header.php(19): require_once('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\themes\corprato\some-products.php on line 9
+
+2022-02-01T13:13:23+00:00 CRITICAL Uncaught Error: Call to undefined function woo_pagination() in F:\Xampp\htdocs\wp\wp-content\themes\corprato\the-blogs.php:17
+Stack trace:
+#0 F:\Xampp\htdocs\wp\wp-includes\template-loader.php(106): include()
+#1 F:\Xampp\htdocs\wp\wp-blog-header.php(19): require_once('F:\\Xampp\\htdocs...')
+#2 F:\Xampp\htdocs\wp\index.php(17): require('F:\\Xampp\\htdocs...')
+#3 {main}
+  thrown in F:\Xampp\htdocs\wp\wp-content\themes\corprato\the-blogs.php on line 17
+
