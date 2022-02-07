@@ -613,15 +613,13 @@ add_filter('widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args');
 
 remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination');
 
-
-
-include(WP_CONTENT_DIR . '/custom_shortcodes.php');
-
 include(WP_CONTENT_DIR . '/themes/twentysixteen/list_shortcode.php');
 
 add_shortcode('list-table', 'list_shortcode');
 
+include(WP_CONTENT_DIR . '/themes/twentysixteen/csv_shortcode.php');
 
+add_shortcode('download_csv', 'csv_shortcode');
 
 add_action( 'init', 'script_enqueuer' );
 
@@ -632,5 +630,34 @@ function script_enqueuer() {
     );
 	wp_enqueue_script( 'frontend-ajax');
    wp_enqueue_script( 'jquery' );
-
 }
+
+function add_option_to_wp_footer(){ ?>
+    <script type="text/javascript">
+    jQuery('#sort_option').click(function(){
+        jQuery.ajax({
+            type: 'POST',
+            url: '<?php echo admin_url( 'admin-ajax.php'); ?>',
+            data: {"action": "view_sort_option"},
+            success: function(data){alert(data);}
+        });
+        return false;
+    });
+    </script>
+<?php }
+add_action( 'wp_footer', 'add_option_to_wp_footer' );
+
+function view_sort_option(){
+    echo get_bloginfo( 'description', 'display' );
+    exit;
+}
+
+add_action( 'wp_ajax_view_sort_option', 'view_sort_option' );
+add_action( 'wp_ajax_nopriv_view_sort_option', 'view_sort_option' );
+
+function w4dev_enqueue_jquery(){
+    wp_enqueue_script( 'jquery' );
+}
+
+add_action( 'wp_enqueue_scripts', 'w4dev_enqueue_jquery');
+ 

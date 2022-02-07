@@ -14,14 +14,11 @@ Template Name: OrdersReport
             <option value="customer_id">Customer</option>
             <option value="date">Date</option>
         </select>
-        <?php echo do_shortcode('[list-table order_by="customer_id"]'); ?>
-    </main><!-- #content -->
+       
+        <?php echo do_shortcode('[data-table order_by="customer_id" table="orders_report"]'); ?>
 
-    <?php
-    if (function_exists('pagination_plugin')) :
-        pagination_plugin('orders_report', null);
-    endif;
-    ?>
+    </main><!-- #content -->
+ 
 
 </div><!-- #primary -->
 
@@ -30,7 +27,7 @@ Template Name: OrdersReport
 <?php get_footer(); ?>
 
 <script type="text/javascript">
-
+ 
 var val = jQuery('#sortOption').val();
 
 jQuery('#sortOption').on("change", function(e) {
@@ -44,9 +41,9 @@ jQuery.ajax({
         dataType:"json",
         url:frontend_ajax_object.ajaxurl,
         data: { 
-            action: 'list_shortcode',
+            "action": "list_shortcode",
             valu: val},
-        
+        success: function(data){alert(data);}
 });
 
 </script>

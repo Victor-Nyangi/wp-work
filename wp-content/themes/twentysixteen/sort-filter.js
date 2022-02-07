@@ -11,7 +11,6 @@ jQuery.ajax({
         dataType:"json",
         url:frontend_ajax_object.ajaxurl,
         data: { 
-            action: 'list_shortcode',
-            valu: val},
-        
+            "action": 'list_shortcode',
+            "valu": val},     
 });

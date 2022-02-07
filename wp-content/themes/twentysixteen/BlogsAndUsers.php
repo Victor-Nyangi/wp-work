@@ -38,16 +38,16 @@ Template Name: BlogsAndUsers
                     </h4>
                     <?php if (get_the_author_meta('description', $q->ID) != '') : ?>
                         <p><?php echo get_the_author_meta('description', $q->ID); ?></p>
-                    <?php endif; ?>
+                        <?php endif; ?>
+                        
+                    </div>
+                </li>
+                
+                <?php }
 
-                </div>
-            </li>
-
-        <?php }
-
-        echo '</ul>';
-
-        ?>
+                echo '</ul>';
+            ?>
+        <a id="view_site_description" href="javascript:void(0);">View Our Site Description</a>
 
         <?php
         if ($total_users > $total_query) {
