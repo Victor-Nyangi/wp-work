@@ -625,16 +625,11 @@ function script_enqueuer() {
    wp_enqueue_script( 'jquery' );
 }
 
-
-// add the sortby url parameter
-add_action('init','add_sort_val');
-function add_sort_val() { 
-    global $wp; 
-    $wp->add_query_var('sortby'); 
-}
-
 add_action('init','add_page_val');
+
 function add_page_val() { 
     global $wp; 
-    $wp->add_query_var('page'); 
+    $wp->add_query_var('paged'); 
 }
+
+// . 'page/%#%/'

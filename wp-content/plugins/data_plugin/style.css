@@ -1,0 +1,35 @@
+    #data-table {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    
+    #pagination {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #pagination .page-numbers li {
+        font-size: 1rem;
+        border-radius: 6px;
+        color: #007acc;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    
+    #pagination .page-numbers li:hover {
+        color: #90EE90;
+    }
+    
+    #pagination .page-numbers :active {
+        background: lighten(#202020, 3%);
+    }
+    
+    #pagination .current {
+        display: inline-block;
+        font-weight: 700;
+        color: black;
+    }
