@@ -10,11 +10,35 @@
 // add api routing file
 
 $order = '';
-include( plugin_dir_path( __FILE__ ) . 'api_routes.php');
+include(plugin_dir_path(__FILE__) . 'api_routes.php');
+
+// Export button with name dataExport
+if (isset($_GET["dataExport"])) {
+	header("Content-type: application/vnd.ms-excel"); // tells browser to download
+	header("Content-disposition: csv" . date("Y-m-d") . ".csv");
+	header("Content-disposition: filename=data.csv");
+
+	$fileName = 'orders.csv';
+
+	$output = fopen("php://output", "w");
+
+	// Set table header
+	$table_head = array('Id', 'Order', 'Customer', 'Email');
+	fputcsv($output, $table_head);
+	// ARRAY_N to return output as a numerically indexed array of numerically indexed arrays.
+	$results = $wpdb->get_results("SELECT id, order_id, customer_id, email FROM {$wpdb->prefix}orders_report", ARRAY_N);
+
+	foreach ($results as $row) {
+		fputcsv($output, $row);
+	}
+	fclose($output);
+	exit;
+}
 
 function data_shortcode($atts)
 {
 	global $wpdb;
+
 	ob_start();
 
 	wp_enqueue_script('exportscript', plugins_url('/exporttocsv.js', __FILE__), array('jquery'), '1.0.0.', true);
@@ -43,6 +67,7 @@ function data_shortcode($atts)
 		$total = $wpdb->get_var("SELECT COUNT(`id`) FROM {$wpdb->prefix}$args[table] WHERE post_type in('$args[pars]')");
 	}
 
+	// To add an additional pagination page in case values exceed
 	if (intval($total % $number) != 0) {
 		$total_pages = intval($total / $number) + 1;
 	} else {
@@ -55,17 +80,6 @@ function data_shortcode($atts)
 		$results = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}$args[table] ORDER BY $order_value ASC LIMIT $offset, $number");
 	}
 
-	// $order = wc_get_order( 187 );
-	$current_user = get_current_user_id();
-  
-// Now you have access to (see above)...
-  echo $current_user;
-// if ( $order ) {
-//    $order->get_formatted_order_total( );
-//    // etc.
-//    // etc.
-// }
-
 ?>
 	<div id="primary" class="site-content">
 		<main id="main" class="site-main" role="main">
@@ -76,7 +90,9 @@ function data_shortcode($atts)
 					<option value="customer_id">Customer</option>
 					<option value="created">Date</option>
 				</select>
-				<button id='btn_csv_export'>Export</button>
+				<form action="" method="GET">
+					<button name="dataExport">Export</button>
+				</form>
 			</div>
 			<table id="dataTable">
 				<tbody>
@@ -88,8 +104,6 @@ function data_shortcode($atts)
 					</tr>
 					<?php
 					foreach ($results as $row) {
-
-						// Modify these to match the database structure
 						$id = $row->id;
 						$ord_id = $row->order_id;
 						$cust_id = $row->customer_id;
@@ -100,7 +114,7 @@ function data_shortcode($atts)
 							<td class="tako">' . $ord_id . '</td>
 							<td class="tako">' . $cust_id . '</td>
 							<td class="tako">' . $email . '</td></tr>';
-						}
+					}
 					?>
 				</tbody>
 			</table>
@@ -121,8 +135,8 @@ function data_shortcode($atts)
 			} else {
 				$current = max(1, get_query_var('paged'));
 				echo paginate_links(array(
-					'base' => @add_query_arg('paged','%#%'),
-        			'format' => '?paged=%#%',
+					'base' => @add_query_arg('paged', '%#%'),
+					'format' => '?paged=%#%',
 					'current' => $current,
 					'total' => $total_pages,
 					'prev_text'    => __('<<'),
@@ -183,11 +197,11 @@ function w4dev_enqueue_jquery()
 
 add_action('wp_enqueue_scripts', 'w4dev_enqueue_jquery');
 
-
 // add the sortby url parameter
-function add_sort_val() { 
-	global $wp; 
-    $wp->add_query_var('sortby'); 
+function add_sort_val()
+{
+	global $wp;
+	$wp->add_query_var('sortby');
 }
 
-add_action('init','add_sort_val');
+add_action('init', 'add_sort_val');
