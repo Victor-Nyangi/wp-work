@@ -13,6 +13,7 @@ use MailPoet\PostEditorBlocks\PostEditorBlock;
 use MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration;
 use MailPoet\Router;
 use MailPoet\Settings\SettingsController;
+use MailPoet\Statistics\Track\SubscriberActivityTracker;
 use MailPoet\Util\ConflictResolver;
 use MailPoet\Util\Helpers;
 use MailPoet\Util\Notices\PermanentNotices;
@@ -85,6 +86,9 @@ class Initializer {
   /** @var AssetsLoader */
   private $assetsLoader;
 
+  /** @var SubscriberActivityTracker */
+  private $subscriberActivityTracker;
+
   const INITIALIZED = 'MAILPOET_INITIALIZED';
 
   public function __construct(
@@ -107,6 +111,7 @@ class Initializer {
     WooCommerceHelper $wcHelper,
     Localizer $localizer,
     AutomaticEmails $automaticEmails,
+    SubscriberActivityTracker $subscriberActivityTracker,
     AssetsLoader $assetsLoader
   ) {
     $this->rendererFactory = $rendererFactory;
@@ -128,6 +133,7 @@ class Initializer {
     $this->woocommerceBlocksIntegration = $woocommerceBlocksIntegration;
     $this->localizer = $localizer;
     $this->automaticEmails = $automaticEmails;
+    $this->subscriberActivityTracker = $subscriberActivityTracker;
     $this->assetsLoader = $assetsLoader;
   }
 
@@ -243,6 +249,7 @@ class Initializer {
       $this->setupPermanentNotices();
       $this->setupAutomaticEmails();
       $this->setupWoocommerceBlocksIntegration();
+      $this->subscriberActivityTracker->trackActivity();
       $this->postEditorBlock->init();
 
       WPFunctions::get()->doAction('mailpoet_initialized', MAILPOET_VERSION);

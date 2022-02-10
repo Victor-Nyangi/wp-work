@@ -54,6 +54,18 @@ function data_shortcode($atts)
 	} else {
 		$results = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}$args[table] ORDER BY $order_value ASC LIMIT $offset, $number");
 	}
+
+	// $order = wc_get_order( 187 );
+	$current_user = get_current_user_id();
+  
+// Now you have access to (see above)...
+  echo $current_user;
+// if ( $order ) {
+//    $order->get_formatted_order_total( );
+//    // etc.
+//    // etc.
+// }
+
 ?>
 	<div id="primary" class="site-content">
 		<main id="main" class="site-main" role="main">

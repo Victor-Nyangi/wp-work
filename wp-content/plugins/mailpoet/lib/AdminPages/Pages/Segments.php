@@ -144,6 +144,7 @@ class Segments {
     $data['product_categories'] = $this->wpPostListLoader->getWooCommerceCategories();
 
     $data['products'] = $this->wpPostListLoader->getProducts();
+    $data['membership_plans'] = $this->wpPostListLoader->getMembershipPlans();
     $data['subscription_products'] = $this->wpPostListLoader->getSubscriptionProducts();
     $data['is_woocommerce_active'] = $this->woocommerceHelper->isWooCommerceActive();
     $wcCountries = $this->woocommerceHelper->isWooCommerceActive() ? $this->woocommerceHelper->getAllowedCountries() : [];
@@ -153,6 +154,9 @@ class Segments {
         'code' => $code,
       ];
     }, array_keys($wcCountries), $wcCountries);
+    $data['can_use_woocommerce_memberships'] = $this->segmentDependencyValidator->canUseDynamicFilterType(
+      DynamicSegmentFilterData::TYPE_WOOCOMMERCE_MEMBERSHIP
+    );
     $data['can_use_woocommerce_subscriptions'] = $this->segmentDependencyValidator->canUseDynamicFilterType(
       DynamicSegmentFilterData::TYPE_WOOCOMMERCE_SUBSCRIPTION
     );
