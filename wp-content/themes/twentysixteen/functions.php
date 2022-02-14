@@ -625,6 +625,7 @@ function script_enqueuer() {
    wp_enqueue_script( 'jquery' );
 }
 
+
 add_action('init','add_page_val');
 
 function add_page_val() { 
@@ -632,4 +633,5 @@ function add_page_val() {
     $wp->add_query_var('paged'); 
 }
 
-// . 'page/%#%/'
+
+

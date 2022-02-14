@@ -44,6 +44,7 @@ do_action( 'woocommerce_auth_page_header' ); ?>
 		<label for="password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 		<input class="input-text" type="password" name="password" id="password" />
 	</p>
+
 	<p class="wc-auth-actions">
 		<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
 		<button type="submit" class="button button-large button-primary wc-auth-login-button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>"><?php esc_html_e( 'Login', 'woocommerce' ); ?></button>

@@ -283,7 +283,7 @@ add_action( 'woocommerce_auth_page_footer', 'woocommerce_output_auth_footer', 10
  */
 add_filter( 'jetpack_comment_form_enabled_for_product', '__return_false' );
 
-/**
+/** 
  * My Account.
  */
 add_action( 'woocommerce_account_navigation', 'woocommerce_account_navigation' );

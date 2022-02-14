@@ -19,7 +19,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+
 do_action( 'woocommerce_before_customer_login_form' ); ?>
+
 
 <?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
 
@@ -43,8 +45,10 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 				<label for="password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
 			</p>
+			<?php echo do_shortcode('[bws_google_captcha]'); ?>
 
 			<?php do_action( 'woocommerce_login_form' ); ?>
+
 
 			<p class="form-row">
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
@@ -101,7 +105,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 			<?php endif; ?>
 
 			<?php do_action( 'woocommerce_register_form' ); ?>
-
+			
 			<p class="woocommerce-form-row form-row">
 				<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
 				<button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></button>
